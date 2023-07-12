@@ -1,0 +1,69 @@
+body {
+  height: 100%;
+}
+
+.page-wrapper {
+  min-height: 100vh;
+  background-color: black;
+}
+
+.custom-margin {
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  /* Adjust the margin size as needed */
+}
+
+.card-ticket {
+  color: white;
+  transform: perspective(800px) rotateY(25deg) scale(0.9) rotateX(10deg);
+  background: linear-gradient(325deg, #fc466b, #3f5efb);
+  transform-style: preserve-3d;
+  border-radius: 32px;
+  border: 2px solid white;
+  /* Add this line */
+  height: 500px;
+  width: 300px;
+  box-shadow: 1px 1px 0 1px #a0a0a0, -1px 0 28px 0 rgba(34, 33, 81, 0.5),
+    28px 28px 28px 0 rgba(34, 33, 81, 0.5);
+  transition: 0.4s ease-in-out transform, 0.4s ease-in-out box-shadow;
+}
+
+.card-ticket:hover {
+  transform: perspective(800px) rotateY(0deg) translateY(0px) rotateX(0deg) scale(1);
+  filter: blur(0);
+}
+
+.card-ticket .bulge {
+  filter: none;
+}
+
+.bulge {
+  margin-left: 2vh;
+  margin-top: 2vh;
+  border-radius: 10px;
+  width: 150px;
+  height: 150px;
+  background-color: #E0E5EC;
+  box-shadow: 2px 2px 6px 0 #c4ceda, -4px 0 3px 0 hsla(0, 0%, 100%, 0.6), 0 -4px 3px 0 hsla(0, 0%, 100%, 0.6), -2px -2px 14px 4px #fff, 3px 3px 8px 0 #b0c4db, 3px 3px 15px 0 #c4ceda;
+}
+
+.qr {
+  width: 150px;
+  height: 150px;
+}
+
+.ticket-info{
+  top: 2vh;
+}
+
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

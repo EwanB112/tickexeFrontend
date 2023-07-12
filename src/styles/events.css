@@ -1,0 +1,14 @@
+.event {
+    margin-left: 2vh;
+    margin-right: 2vh;
+    color: white;
+    transform-style: preserve-3d;
+    border: 2px solid white;
+    height: 400px;
+    width: 525px;
+}
+
+.image {
+    height: 350px;
+    width: 520px;
+}

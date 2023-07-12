@@ -1,0 +1,146 @@
+.how-it-works {
+    padding: 4rem 0;
+}
+
+.how-it-works-heading {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    text-align: left;
+}
+
+.how-it-works-item {
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.how-it-works-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.how-it-works-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.how-it-works-description {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.security-section {
+    padding-left: 2rem;
+}
+
+.security-item {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.security-description {
+    font-size: 0.9rem;
+    margin-left: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+.security-item .bi-patch-check-fill {
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.divider {
+    border-left: 2px solid white;
+    height: 58%;
+    position: absolute;
+    left: 54%;
+    margin-left: -1px;
+}
+
+@media (max-width: 991.98px) {
+    .divider {
+        display: none;
+    }
+}
+
+.animated-background {
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(203deg, #b2a4ff, #ffb4b4, #ffdeb4);
+    background-size: 600% 600%;
+    -webkit-animation: AnimationName 70s ease infinite;
+    -moz-animation: AnimationName 70s ease infinite;
+    animation: AnimationName 70s ease infinite;
+    border: 5px;
+    border-color: white;
+}
+.animated-background:before,
+.animated-background:after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    bottom: -10px;
+    left: -10px;
+    right: -10px;
+    background: inherit;
+    z-index: -1;
+    filter: blur(20px);
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .howItWorks,
+  .ourGuarentee {
+    opacity: 0;
+    transition: all 2s ease-out;
+  }
+  
+  .howItWorks.animate-on-scroll {
+    animation: slideInFromLeft 2s forwards;
+  }
+  
+  .ourGuarentee.animate-on-scroll {
+    animation: slideInFromRight 2s forwards;
+  }
+  
